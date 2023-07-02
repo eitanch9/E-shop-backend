@@ -1,6 +1,12 @@
-import Bcrypt from 'bcryptjs';
-
+import bcrypt from 'bcryptjs'
 const data = {
+  users: [
+    {
+      name: 'Admin',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('12345')
+    }
+  ],
   products: [
     {
       title: 'Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops',
@@ -71,7 +77,7 @@ const data = {
         "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
       category: 'Jewelery',
       image: 'https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg',
-      countInStock: 0,
+      countInStock: 16,
       token:
         "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
       brand: 'John Hardy',
@@ -553,13 +559,6 @@ const data = {
         rate: 2.9,
         count: 502,
       },
-    },
-  ],
-  users: [
-    {
-      name: 'Admin',
-      email: 'admin@gmail.com',
-      password: Bcrypt.hashSync('12345'),
     },
   ],
 };

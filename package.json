@@ -5,10 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=14.20.1"
+    "start" : "node server.js",
+    "startedev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
